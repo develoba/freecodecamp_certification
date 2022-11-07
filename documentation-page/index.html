@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="develoba">
+    <meta name="description" content="documentation page about CSS fonts and text layouts and styles">
+    <title>CSS Fonts and Texts</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="https://github.com/develoba" target="_blank">🐺 DeveLoba Web Docs</a>
+      <a class="header__btn" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">Get Original Docs</a>
+    </header>
+
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>CSS Font and Text</header>
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#font_family">Font Family</a>
+        <a class="nav-link" href="#font_size">Font Size</a>
+        <a class="nav-link" href="#other_font_properties">Other Font Properties</a>
+        <a class="nav-link" href="#text_transform">Text Transform</a>
+        <a class="nav-link" href="#text_decoration">Text Decoration</a>
+        <a class="nav-link" href="#text_shadow">Text Shadow</a>
+        <a class="nav-link" href="#text_align">Text Align</a>
+        <a class="nav-link" href="#references">References</a>
+      </nav>
+
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>In this page we'll go through all the basic fundamentals of text/font styling in detail, including setting font weight, family and style, font shorthand, text alignment and other effects, and line and letter spacing.</p>
+      </section>
+
+      <section class="main-section" id="font_family">
+        <header>Font Family</header>
+        <p>Font-family property allows you to specify a font (or list of fonts) for the browser to apply to the selected elements. The browser will only apply a font if it is available on the machine the website is being accessed on; if not, it will just use a browser default font.</p>
+        <p>There are different aspect to consider when applying a font family:</p>
+        <ul>
+          <li>Web safe fonts: there are only a certain number of fonts that are generally available across all systems and can therefore be used without much worry. These are the so-called web safe fonts</li>
+          <li>Default fonts: CSS defines five generic names for fonts: serif, sans-serif, monospace, cursive, and fantasy.</li>
+          <li>Imported fonts from Google</li>
+        </ul>
+        <p>It is important to supply a font stack so that the borwser has multiple fonts it can choose from, separating each font names by commas.</p>
+        <p>Another consideration is that font names that have more than one word need to be surrounded by quotes.</p>
+        <p>Font-family example:</p>
+        <code>
+          p {
+            color: red;
+            font-family: Helvetica, Arial, sans-serif
+          }
+        </code>
+      </section>
+
+      <section class="main-section" id="font_size">
+        <header>Font Size</header>
+        <p>Font size property can change the text size by applying px units, em units or rem units.</p>
+        <p>The font-size of an element is inherited from that element's parent element. This all starts with the root element of the entire document, the standard font-size of which is set to 16px across browsers. Any paragraph (or another element that doesn't have a different size set by the browser) inside the root element will have a final size of 16 px</p>
+        <p>It is best practices to use rem units to modify font size so that it only depends of the root element of the document</p>
+        <p>Font size example:</p>
+        <code>font-size: 1.5rem;</code>
+      </section>
+
+      <section class="main-section" id="other_font_properties">
+        <header>Other Font Properties</header>
+        <p>There are other properties applied to style the font of a page:</p>
+        <ul>
+          <li>Font style: used to turn italic text on or off</li>
+          <li>Font weight: sets how bold the text is</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="text_transform">
+        <header>Text Transform</header>
+        <p>It's a property that allows you to set your font to be transformed, using uppercase to make all text to capitals; lowercase to make all text lower case, and capitalize to uppercase each first letter of the words</p>
+        <p>Text transform example:</p>
+        <code>text-transform: uppercase;</code>
+      </section>
+      
+      <section class="main-section" id="text_decoration">
+        <header>Text Decoration</header>
+        <p>Sets/unsets text decorations on fonts (you'll mainly use this to unset the default underline on links when styling them). It can have values of underline, overline, line-through or none</p>
+        <p>You should note that text-decoration can accept multiple values at once if you want to add multiple decorations simultaneously</p>
+        <p>Also note that text-decoration is a shorthand property for text-decoration-line, text-decoration-style, and text-decoration-color. You can use combinations of these property values to create interesting effects.</p>
+        <p>Text decoration example:</p>
+        <code>text-decoration: line-through red wavy;</code>
+      </section>
+
+      <section class="main-section" id="text_shadow">
+        <header>Text Shadow</header>
+        <p>You can apply drop shadows to your text using the text-shadow property. This takes up to four values: horizontal offset, vertical offset, blur radius, and the base color of the shadow.</p>
+        <p>You can also apply multiple shadows to the same text by including multiple shadow values separated by commas</p>
+        <p>Text shadow example:</p>
+        <code>text-shadow: 1px 1px 1px red, 2px 2px 1px red;</code>
+      </section>
+
+      <section class="main-section" id="text_align">
+        <header>Text Align</header>
+        <p>The text-align property is used to control how text is aligned within its containing content box.</p>
+        <p>Text align example:</p>
+        <code>text-align: right;</code>
+      </section>
+
+      <section class="main-section" id="references">
+        <header>References</header>
+        <p>All the documentation is taken from the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">MDN Web Docs</a></p>
+      </section>
+    </main>
+  </body>
+</html>

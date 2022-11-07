@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">AICamp Survey Form</h1>
+    <p id="description">Do you want more information to join our Deep Learning BootCamp? <br> Please fill out the following form:
+    <div class="container">
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+          <label for="last-name" id="last-name-label">Last Name: <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"></label>
+          <label id="number-label" for="number">Age (optional): <input type="number" id="number" name="age" min="13" max="120" placeholder="Your age"></label>
+          <label id="email-label" for="email">Email: <input type="email" id="email" name="email" required placeholder="Enter your email"></label>
+          <label id="phone-label" for="phone">Phone (optional): <input type="tel" id="phone" name="phone" placeholder="Enter your phone"></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown">
+            What is your current role?
+            <select id="dropdown">
+              <option value="" selected disabled>Select current role</option>
+              <option value="student">Student</option>
+              <option value="full-time">Full-time worker</option>
+              <option value="part-time">Part-time worker</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <p class="form-question">How much time could you dedicate to AICamp?</p>
+          <label for="5-hours"><input type="radio" id="5-hours" name="dedicated-time" value="5-hours"> 5 hours (1 hour per day)</label>
+          <label for="10-hours"> 
+            <input type="radio" id="10-hours" name="dedicated-time" value="10-hours"> 10 hours (2hours per day)
+          </label>
+          <label for="20-hours"><input type="radio" id="20-hours" name="dedicated-time" value="20-hours"> 20 hours (4 hours per day)</label>
+
+          <p class="form-question">In what field are you more interested (Check all that apply): 
+          <label for="ml"><input id="ml" type="checkbox" value="ml"> Machine Learning</label>
+          <label for="dl"><input id="dl" type="checkbox" value="dl"> Deep Learning</label>
+          <label for="nn"><input id="nn" type="checkbox" value="nn"> Neural Networks</label>
+          <label for="computer-vision"><input id="computer-vision" type="checkbox" value="computer-vision"> Computer Vision</label>
+          <label for="cognitive-computing"><input id="cognitive-computing" type="checkbox" value="cognitive-computing"> Cognitive computing</label>
+          <label for="nlp"><input id="nlp" type="checkbox" value="nlp"> Natural Language Processing</label>
+
+        </fieldset>
+
+
+        <fieldset>
+          <label for="message">Enter any comments or suggestions: <textarea id="message" placeholder="I enjoy coding but I want to improve my CNN knowledge." rows=4 cols= 30></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
