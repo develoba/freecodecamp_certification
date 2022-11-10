@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="DeveLoba">
+        <meta name="description" content="See the latest sneakers made for everybody, combining oldies styles with the newest tech trends.">
+        <meta name="robots" content="index, follow">
+
+        <title>Sneaks4Geeks</title>
+        <link rel="icon" href="./images/zapatilla.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- || HEADER SECTION -->
+        <header id="header">
+            <div class="logo-container">
+                <img id="header-img" src="./images/zapatilla.png" alt="sneaks for geeks logo image">
+                <h1 class="header__title">Sneaks4<span class="header__title--color">Geeks</span></h1>
+            </div>
+            <nav id="header-nav">
+                <ul>
+                    <li><a class="nav-link" href="#info">About</a></li>
+                    <li><a class="nav-link" href="#shop">Shop</a></li>
+                    <li><a class="nav-link" href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- || MAIN SECTION -->
+        <main>
+            <div class="video-container">
+                <video id="video" muted autoplay loop>
+                    <source src="./images/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <section id="info">
+                <h2 class="info__title">Sneakers that will make you code faster</h2>
+                <article class="info__article">
+                    <img class="info__img" src="./images/High-tech-sneakers-wtvox.com-Reebok-Instapump-Fury-OG-BM.gif" alt="sneakers instapump animated image">
+                    <div class="info__content">
+                        <h3>Instapump Fury 95</h3>
+                        <p>Retro Sneakers merged with the newest technology. Futurist lines while having the 90's flow!</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="shop">
+                <h2 class="shop__title">Get Sneaks for the Whole Family</h2>
+                <div class="shop__container">
+                    <article class="card">
+                        <h3 class="card__title">Instapump for Women</h3>
+                        <img class="card__img" src="./images/woman.png" alt="woman instapump">
+                        <p class="card__price">$170</p>
+                        <a href="#" class="card__cta">Shop now</a>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Instapump for Men</h3>
+                        <img class="card__img" src="./images/men.png" alt="men instapump">
+                        <p class="card__price">$170</p>
+                        <a href="#" class="card__cta">Shop now</a>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Instapump for Kids</h3>
+                        <img class="card__img" src="./images/kids2.png" alt="kids instapump">
+                        <p class="card__price">$120</p>
+                        <a href="#" class="card__cta">Shop now</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="subscribe">
+                <h2 class="subscribe__title">Want to know about our latest launches?</h2>
+                <form action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" placeholder="enter your email">
+                    <button id="submit" type="submit">Subscribe now</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- || FOOTER -->
+        <footer>
+            <p>&copy; All rights reserved. <a href="https://github.com/develoba">DeveLoba</a></p>
+        </footer>
+    </body>
+</html>
