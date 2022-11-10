@@ -22,7 +22,7 @@ Build an app that is functionally similar to https://product-landing-page.freeco
 
 ### Screenshot
 
-![](./preview.JPG)
+![](./images/preview.JPG)
 
 
 ### Links
